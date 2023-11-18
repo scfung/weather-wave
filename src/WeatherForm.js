@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+//Used to handle the input for the weather location from the user.
 const WeatherForm = ({ onFormSubmit }) => {
   const [city, setCity] = useState('');
 
