@@ -5,8 +5,11 @@ import axios from 'axios';
 import WeatherForm from './WeatherForm';
 import CurrentWeather from './CurrentWeather';
 import Forecast from './Forecast';
+
+//Used to obtain and display weather information
 function Homepage() {
 
+  //Used to keep track of errors and the weather data.
   const [weatherData, setWeatherData] = useState({current: null, forecast: null});
   const [error, setError] = useState(null);
 
@@ -55,16 +58,16 @@ function Homepage() {
         <h1 className="motto">Welcome to WeatherWave: Your Weather Companion. Stay ahead with real-time updates.</h1>
         <h2 className='info-text'>Our search allows zip codes, cities, and local neighborhoods.</h2>
         <WeatherForm onFormSubmit={getWeatherData} />
-        {error && <h1 className="error-message">{error}</h1>}
+        {error && <h1 className="error-message">{error}</h1>} {/*Display error message on page */}
         {!error && weatherData.current && weatherData.forecast &&(
           <div>
             <h2 className='current-text'>Current Weather Information</h2>
-            <CurrentWeather currentData={weatherData.current} forecastData={weatherData.forecast} />
+            <CurrentWeather currentData={weatherData.current} forecastData={weatherData.forecast} /> {/*Loads if API request is sucessful*/}
           </div>
         )}
         {!error && weatherData.forecast && (
           <div>
-            <Forecast forecastData={weatherData.forecast} />
+            <Forecast forecastData={weatherData.forecast} />  {/*Loads if API request is sucessful*/}
           </div>
         )}
       </div>
