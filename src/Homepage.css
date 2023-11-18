@@ -1,9 +1,9 @@
-.motto{
+.motto{ /* Styling for motto on the top of page */
     text-align: center;
     min-height: 10px;
 }
 
-.Homepage{
+.Homepage{ /* Container for the whole page */
     display: grid;
     justify-content :center;
     flex-direction: column;
@@ -11,12 +11,13 @@
     background-color: #E35505;
 }
 
-.search-item{
+.search-item{ /* Styling for search bar */
     min-height: 25px;
     min-width: 400px;
     margin-right: 20px;
 }
 
-.info-text{
+.info-text{ /* Styling for instructions */
     padding-bottom: 50px;
 }
+
