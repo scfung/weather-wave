@@ -1,26 +1,27 @@
-.Forecast{
+.Forecast{ /*Styling to the Forecast container */
     background-color: #E35505;
     display: flex;
     justify-content: space-evenly;
 
 }
 
-.three-day{
+.three-day{ /* Styling to the header */
     background-color: #E35505;
-
     padding: 10px;
 }
 
-.forecast-card {
+
+.forecast-card { /* Styling to the forecast content */
     padding: 0px;
     margin: 15px;
     background-color: skyblue;
     width: 28%;
-    height: 500px; /* Adjust the height as needed */
+    height: 500px; 
     display:inline-table;
 }
 
-.forecast-icon{
+
+.forecast-icon{ /* Styling to the forecast icon */
     height: 60px;
     width: 60px;
 }
