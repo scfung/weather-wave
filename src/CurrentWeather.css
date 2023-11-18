@@ -1,21 +1,20 @@
-.current_weather_conditions{
+.current_weather_conditions{ /*Styling for the current weather conditions */
     background-color: #E35505;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    
 }
 
-.hourly-forecast-text{
+.hourly-forecast-text{ /*Styling for the hourly forecast header */
     background-color: #1000ee;
     overflow: hidden;
     padding: 10px;
     color: #a2cdff;
 }
 
-.hourly_forecast{
+.hourly_forecast{ /* Styling for the hourly forecast container */
     display: flex;
     width:auto;
     flex-wrap: nowrap;
@@ -23,7 +22,7 @@
     background-color: #1000ee;
 }
 
-.hourly-forecast-item{
+.hourly-forecast-item{ /* Styling for the hourly forecast content */
     display: inline-block;
     min-width: 120px;
     min-height: 240px;
@@ -31,24 +30,28 @@
     background-color: #2684F3;
 }
 
-.weather-location{
+/* Styling for the current weather condtions */
+.weather-location{ 
     min-width: 250px;
     flex-basis: 30%;
 }
 
+/* Styling for the current weather condtions */
 .current-temp, .weather-condition{
     flex-basis: 30%;
 }
 
+/* Styling for the current weather condtions */
 .high-temp, .low-temp{
     margin-left: 20px;
     margin-right: 20px;
 }
 
+/* Styling for the current weather condtions */
 .rain-chance, .humidity, .real-feel, .wind-speed{
     flex-basis: 25%;
 }
 
-.error-message{
+.error-message{ /* Styling for the error message */
     color: rgb(121, 9, 9);
 }
