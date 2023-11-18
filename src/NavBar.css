@@ -1,0 +1,42 @@
+/*NavBar button placement*/
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #2684F3;
+}
+
+/* Specific styles for non-active links */
+.link {
+    background-color: #0F1CF3; /* Green */
+    color: white;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 4px;
+    cursor: pointer;
+    border-radius: 14px;
+    min-width: 100px;
+    text-decoration: none;
+  }
+  
+  /* Specific styles for active links */
+.link-active {
+    background-color: #E35505; /* Green */
+    color: white;
+    border: none;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 4px;
+    cursor: pointer;
+    border-radius: 14px;
+    min-width: 100px;
+    text-decoration: none;
+    
+}

@@ -1,0 +1,22 @@
+.motto{
+    text-align: center;
+    min-height: 10px;
+}
+
+.Homepage{
+    display: grid;
+    justify-content :center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #E35505;
+}
+
+.search-item{
+    min-height: 25px;
+    min-width: 400px;
+    margin-right: 20px;
+}
+
+.info-text{
+    padding-bottom: 50px;
+}

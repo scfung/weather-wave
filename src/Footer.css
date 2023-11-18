@@ -1,0 +1,10 @@
+.footer{
+    background-color: #D9D9D9;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+}
+.text2{
+    max-width: 500px;
+}

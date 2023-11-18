@@ -1,0 +1,26 @@
+.Forecast{
+    background-color: #E35505;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.three-day{
+    background-color: #E35505;
+
+    padding: 10px;
+}
+
+.forecast-card {
+    padding: 0px;
+    margin: 15px;
+    background-color: skyblue;
+    width: 28%;
+    height: 500px; /* Adjust the height as needed */
+    display:inline-table;
+}
+
+.forecast-icon{
+    height: 60px;
+    width: 60px;
+}

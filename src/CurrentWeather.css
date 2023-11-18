@@ -1,0 +1,54 @@
+.current_weather_conditions{
+    background-color: #E35505;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.hourly-forecast-text{
+    background-color: #1000ee;
+    overflow: hidden;
+    padding: 10px;
+    color: #a2cdff;
+}
+
+.hourly_forecast{
+    display: flex;
+    width:auto;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #1000ee;
+}
+
+.hourly-forecast-item{
+    display: inline-block;
+    min-width: 120px;
+    min-height: 240px;
+    margin: 10px;
+    background-color: #2684F3;
+}
+
+.weather-location{
+    min-width: 250px;
+    flex-basis: 30%;
+}
+
+.current-temp, .weather-condition{
+    flex-basis: 30%;
+}
+
+.high-temp, .low-temp{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.rain-chance, .humidity, .real-feel, .wind-speed{
+    flex-basis: 25%;
+}
+
+.error-message{
+    color: rgb(121, 9, 9);
+}

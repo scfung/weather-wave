@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: max-content;
+}
+
+.app-name{
+  background-color: #2684F3;
+  padding: 0%;
+  overflow: hidden;
+}
