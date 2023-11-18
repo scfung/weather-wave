@@ -4,18 +4,22 @@ import './CurrentWeather.css'
 import React from 'react';
 
 
+//Returns the current weather condtions and the hourly forecast for the following seven hours.
 function CurrentWeather({ currentData, forecastData }) {
+    //Variables from the database
     const { temp_f, condition, wind_mph, humidity, feelslike_f, wind_dir } = currentData.current;
     const { name } = currentData.location;
     const currentForecastDay = forecastData.forecast.forecastday[0];
     const ForecastDataHolder = forecastData;
   
+    //Variables that round integers to the nearest whole number
     var real_feel = Math.round(feelslike_f);
     var wind_speed = Math.round(wind_mph);
     var current_temp = Math.round(temp_f);
     var min_temp = Math.round(currentForecastDay.day.mintemp_f);
     var max_temp = Math.round(currentForecastDay.day.maxtemp_f);
-  
+
+    //Gets the hourly forecast for the next seven hours
     function getHourlyForecast(forecastData) {
         // Extract relevant data
         const { forecastday } = forecastData.forecast;
@@ -36,6 +40,7 @@ function CurrentWeather({ currentData, forecastData }) {
       
         // Format the hourly forecast data
         const formattedHourlyForecast = hourlyForecast.map((hour) => {
+          //Contains extra information depending on how far application is implemented
           return {
             time: hour.time,
             temperature: {
@@ -61,7 +66,8 @@ function CurrentWeather({ currentData, forecastData }) {
       }
   
     const hourlyForecast = getHourlyForecast(ForecastDataHolder);
-  
+      
+    //Used to dynamically change weather icon based on conditions
     const getWeatherIcon = (iconUrl) => {
         return <img src={iconUrl} alt="Weather Icon" />;
       };
@@ -101,7 +107,7 @@ function CurrentWeather({ currentData, forecastData }) {
         <div className="hourly_forecast">
           {hourlyForecast.map((hour, index) => (
             <div key={index} className="hourly-forecast-item">
-              <h2>{new Date(hour.time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</h2>
+              <h2>{new Date(hour.time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</h2> {/*Changes time to 12 hour format*/}
               <h2>{Math.round(hour.temperature.fahrenheit)}°F</h2>
               <h2>{hour.condition.text}</h2>
               {hour.condition.icon && getWeatherIcon(hour.condition.icon)}
@@ -113,4 +119,5 @@ function CurrentWeather({ currentData, forecastData }) {
   }
   
   export default CurrentWeather;
+
 
