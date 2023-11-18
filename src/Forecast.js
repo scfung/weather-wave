@@ -1,8 +1,9 @@
 
 import './Forecast.css'
 import { DateTime } from 'luxon';
-//import { WiDaySunny, WiRaindrop, WiHumidity} from 'weather-icons-react'; 
 
+
+//Displays the three day forecast
 function Forecast({forecastData}) {
 
   // Extract the next three days from the forecast data
@@ -26,6 +27,7 @@ function Forecast({forecastData}) {
 
         <div className="Forecast">
             <div>
+      {/*Maps out the next three days in forecast*/}
             {nextThreeDays.map((day) => (
 
                 <div className="forecast-card" key={day.date}>
